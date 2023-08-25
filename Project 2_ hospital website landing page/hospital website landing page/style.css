@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans:wght@200;300;400;500&family=Poppins:wght@600&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-image: url("assets/background.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 200px;
+}
+#left{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+#menu{
+    margin-top: 7px;
+}
+#menu a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    font-weight: 600;
+}
+#menu a:hover{
+    color: rgb(0, 221, 255);
+}
+nav button{
+    padding: 15px 20px;
+    background-color: rgb(0, 175, 245);
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+}
+i{
+    margin-left: 5px;
+}
+header section{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 200px;
+    gap: 60px;
+}
+.headlines{
+    margin-top: 150px;
+}
+.headlines h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.headlines p{
+    font-weight: 500;
+    padding-right: 25px;
+    margin-bottom: 25px;
+}
+.headlines button{
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+#quote{
+    background-color: rgb(0, 175, 245);
+    color: white;
+    font-weight: 500;
+}
+#lm{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.bookingform{
+    background-color: white;
+    color: black;
+    margin-left: 100px;
+    width: 270px;
+    height: 440px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+.bookingform h1{
+    font-size: large;
+    padding: 3px 0;
+}
+form{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 15px;
+}
+form input{
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border: none;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+}
+form label{
+    font-weight: 500;
+}
+form select{
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border: none;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+}
+#bookbtn{
+    background-color: rgb(0, 175, 245);
+    padding: 12px 30px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+#lm1{
+    margin: 75px 200px;
+}
+.text{
+    text-align: center;
+}
+.text h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+.text p{
+    font-size: 13px;
+    color: grey;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 35px;
+}
+.icons{
+    display: flex;
+    background-color: rgb(117, 175, 213);
+    padding: 25px 35px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.icons h5{
+    margin-top:18px ;
+    margin-left: 10px;
+}
+.icons img{
+    width: 55px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.features{
+    padding: 25px 40px;
+    font-size: 15px;
+    border: 1px solid  rgb(117, 175, 213);
+    border-radius: 6px;
+}
+.features div{
+    color: rgb(0, 175, 245);
+    font-weight: 500;
+    font-size: 14px;
+}
+#lm2{
+    margin: 100px 0;
+    padding: 75px 200px;
+    background-color: rgb(255, 247, 237);
+}
+.feedback{
+    background-color: white;
+    padding:15px 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 4px;
+}
+.feedback img{
+    width: 55%;
+}
+#faqs{
+    margin: 75px 200px;
+}
+.mainfaqs{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 65px;
+    font-size: 13px;
+}
+.q{
+    display: flex;
+}
+.q i{
+    font-size: 18px;
+    padding-right: 5px;
+}
+.question p{
+    padding-left: 19px;
+    padding-top: 7px;
+}
+#pricing{
+    margin: 75px 200px;
+}
+.pricingcard{
+    margin: 75px 0;
+    display: flex;
+    text-align: center;
+}
+.cards{
+    border: 2px solid rgb(84, 212, 255);
+    padding: 30px;
+    width: 250px;
+    border-radius: 6px;
+    transition: transform 0.3s ease; /* Apply a smooth transition effect */
+    transform-origin: bottom; 
+}
+.cards:hover{
+    transform: scaleY(+1.05);
+    background-color: rgb(19, 0, 57);
+    color: white;
+}
+li{
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: grey;
+    font-weight: 600;
+}
+li>i{
+    font-size: 22px;
+}
+.cardname{
+    text-align: center;
+    padding:0 40px;
+}
+.cardname h1{
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#price{
+    text-align: center;
+    display: flex;
+    margin:25px auto;
+    color: rgb(0, 145, 255);
+}
+#price h1{
+    font-size: 50px;
+    padding-left: 40px;
+}
+sup{
+    position: absolute;
+    font-size: 20px;
+}
+span{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 25px;
+}
+#trnbtn{
+    background-color: rgb(0, 175, 245);
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 25px;
+}
+#contact{
+    padding: 50px 150px;
+    background-color: rgb(23, 13, 43);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 100px;
+}
+.message{
+    width:45%;
+    line-height: 25px;
+    padding: 20px;
+   margin-top: 25px;
+}
+.message h1{
+    font-size: 35px;
+    padding-bottom:10px ;
+}
+.inputs{
+    display: flex;
+    width: 370px;
+    height: 50px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 45px;
+    font-weight: 500;
+}
+input{
+    width: 100%;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+}
+.subscribe{
+    background-color: rgb(0, 175, 245);
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 10px;
+    margin: 2px;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 75px 200px;
+}
+#footer h1{
+    color: rgb(15, 5, 40);
+    padding-bottom: 20px;
+}
+#footer p{
+    color: grey;
+    font-weight: 500;
+    font-size: 18px;
+}
+#footer i{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
